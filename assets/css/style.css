@@ -1,0 +1,25 @@
+body {
+  background-color: #D9D1CC; }
+
+.navbar {
+  background-color: #606663; }
+  .navbar .navlist {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    color: white;
+    margin: 15px; }
+
+.jumbotron {
+  background-image: url("../images/jumboburger.jpg");
+  background-size: cover;
+  height: 300px;
+  text-align: center; }
+
+h1 {
+  margin-bottom: 50px; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #BC6C6C; }
+
+.debug {
+  border: red 1px solid; }
