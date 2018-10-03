@@ -7,12 +7,16 @@ body{
     background-color: $background;
 }
 
-.navbar{
+nav{
     background-color: $navColor;
     .navlist{
         justify-content: space-around;
         color:white;
         margin:15px;
+    }
+    .logo{
+        object-fit: contain;
+        max-height: 30px;
     }
 }
 
@@ -21,7 +25,7 @@ body{
 
 
 
-.jumbotron{
+/*.jumbotron{
     background-image: url('../images/jumboburger.jpg');
     background-size: cover;
     height:300px;
@@ -38,5 +42,5 @@ h1,h2,h3,h4,h5,h6{
 
 .debug{
     border: red 1px solid;
-}
+}*/
 
