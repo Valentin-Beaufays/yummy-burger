@@ -1,33 +1,133 @@
-body {
-  background-color: #D9D1CC; }
-
-nav {
+.navbar {
   background-color: #606663; }
-  nav .navlist {
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    color: white;
-    margin: 15px; }
-  nav .logo {
-    -o-object-fit: contain;
-    object-fit: contain;
-    max-height: 30px; }
+  .navbar .navbar-brand {
+    color: #d9d1cc; }
+    .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
+      color: #bc6c6c; }
+  .navbar .navbar-text {
+    color: #d9d1cc; }
+    .navbar .navbar-text a {
+      color: #bc6c6c; }
+      .navbar .navbar-text a:hover, .navbar .navbar-text a:focus {
+        color: #bc6c6c; }
+  .navbar .navbar-nav .nav-link {
+    color: #d9d1cc;
+    border-radius: .25rem;
+    margin: 0 0.25em; }
+    .navbar .navbar-nav .nav-link:not(.disabled):hover, .navbar .navbar-nav .nav-link:not(.disabled):focus {
+      color: #bc6c6c; }
+  .navbar .navbar-nav .dropdown-menu {
+    background-color: #606663;
+    border-color: #d9d1cc; }
+    .navbar .navbar-nav .dropdown-menu .dropdown-item {
+      color: #d9d1cc; }
+      .navbar .navbar-nav .dropdown-menu .dropdown-item:hover, .navbar .navbar-nav .dropdown-menu .dropdown-item:focus, .navbar .navbar-nav .dropdown-menu .dropdown-item.active {
+        color: #bc6c6c;
+        background-color: #d9d1cc; }
+    .navbar .navbar-nav .dropdown-menu .dropdown-divider {
+      border-top-color: #d9d1cc; }
+  .navbar .navbar-nav .nav-item.active .nav-link, .navbar .navbar-nav .nav-item.active .nav-link:hover, .navbar .navbar-nav .nav-item.active .nav-link:focus, .navbar .navbar-nav .nav-item.show .nav-link, .navbar .navbar-nav .nav-item.show .nav-link:hover, .navbar .navbar-nav .nav-item.show .nav-link:focus {
+    color: #bc6c6c;
+    background-color: #d9d1cc; }
+  .navbar .navbar-toggle {
+    border-color: #d9d1cc; }
+    .navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus {
+      background-color: #d9d1cc; }
+    .navbar .navbar-toggle .navbar-toggler-icon {
+      color: #d9d1cc; }
+  .navbar .navbar-collapse,
+  .navbar .navbar-form {
+    border-color: #d9d1cc; }
+  .navbar .navbar-link {
+    color: #d9d1cc; }
+    .navbar .navbar-link:hover {
+      color: #bc6c6c; }
 
-/*.jumbotron{
-    background-image: url('../images/jumboburger.jpg');
-    background-size: cover;
-    height:300px;
-    text-align:center;
-}
+@media (max-width: 575px) {
+  .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #d9d1cc; }
+    .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #bc6c6c; }
+  .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #bc6c6c;
+    background-color: #d9d1cc; } }
 
-h1{
-    margin-bottom:50px;
-}
+@media (max-width: 767px) {
+  .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #d9d1cc; }
+    .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #bc6c6c; }
+  .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #bc6c6c;
+    background-color: #d9d1cc; } }
 
-h1,h2,h3,h4,h5,h6{
-        color:$titlecolor;
-    }
+@media (max-width: 991px) {
+  .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #d9d1cc; }
+    .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #bc6c6c; }
+  .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #bc6c6c;
+    background-color: #d9d1cc; } }
 
-.debug{
-    border: red 1px solid;
-}*/
+@media (max-width: 1199px) {
+  .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #d9d1cc; }
+    .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #bc6c6c; }
+  .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #bc6c6c;
+    background-color: #d9d1cc; } }
+
+.navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item {
+  color: #d9d1cc; }
+  .navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #bc6c6c; }
+
+.navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item.active {
+  color: #bc6c6c;
+  background-color: #d9d1cc; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e7ded8; }
+
+.row {
+  margin: 0;
+  padding: 0; }
+
+.logo {
+  -o-object-fit: contain;
+  object-fit: contain;
+  max-height: 20px; }
+
+.navbar-nav {
+  margin: auto; }
+
+.jumbotron {
+  text-align: center;
+  margin: 0;
+  color: #BC6C6C; }
+  .jumbotron.jumbo-Accueil {
+    background-image: url("../images/jumboburger_edited.jpg");
+    height: 250px; }
+
+.card {
+  max-width: 300px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 5px 5px 4px grey;
+  box-shadow: 5px 5px 4px grey; }
+
+.picture {
+  -o-object-fit: contain;
+  object-fit: contain;
+  max-width: 100%; }
+
+.image {
+  padding: 15px; }
+
+.debug {
+  border: red 1px solid; }

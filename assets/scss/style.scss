@@ -1,46 +1,67 @@
+@import 'navbar';
+
 $navColor:#606663;
-$background:#D9D1CC;
+$background:rgb(231, 222, 216);
+$background-jumbotron-title:rgb(231, 222, 216);
 $titlecolor:#BC6C6C;
 $bluelink:#96ADC1;
-
+//init
 body{
+    margin:0;
+    padding:0;
     background-color: $background;
+
+}
+//init row
+.row{
+    margin:0;
+    padding:0;
 }
 
-nav{
-    background-color: $navColor;
-    .navlist{
-        justify-content: space-around;
-        color:white;
-        margin:15px;
-    }
-    .logo{
-        object-fit: contain;
-        max-height: 30px;
-    }
+//navbar
+
+.logo{
+    object-fit: contain;
+    max-height: 20px;
 }
 
+.navbar-nav{
+    margin:auto;
 
+}
 
+//jumbotron
 
+.jumbotron{
 
-
-/*.jumbotron{
-    background-image: url('../images/jumboburger.jpg');
-    background-size: cover;
-    height:300px;
+    &.jumbo-Accueil{
+        background-image: url('../images/jumboburger_edited.jpg');
+        height:250px
+    }
     text-align:center;
+    margin:0;
+    color:$titlecolor;
 }
 
-h1{
-    margin-bottom:50px;
+//news cards
+.card{
+    max-width:300px;
+    margin:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    box-shadow: 5px 5px 4px grey;
 }
 
-h1,h2,h3,h4,h5,h6{
-        color:$titlecolor;
-    }
+//presentation
+.picture{
+    object-fit: contain;
+    max-width:100%;
+}
+
+.image{
+    padding:15px;
+}
 
 .debug{
-    border: red 1px solid;
-}*/
-
+    border:red 1px solid;
+}
