@@ -116,18 +116,97 @@ body {
 .card {
   max-width: 300px;
   margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   -webkit-box-shadow: 5px 5px 4px grey;
   box-shadow: 5px 5px 4px grey; }
 
-.picture {
-  -o-object-fit: contain;
-  object-fit: contain;
-  max-width: 100%; }
+.card:hover {
+  -webkit-transform: translate(2px, 2px);
+  -ms-transform: translate(2px, 2px);
+  transform: translate(2px, 2px);
+  -webkit-box-shadow: 4px 4px 2px grey;
+  box-shadow: 4px 4px 2px grey; }
 
-.image {
-  padding: 15px; }
+.news a {
+  color: black; }
+
+.presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px; }
+  .presentation .presentationCard {
+    max-width: 1140px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 4px grey;
+    box-shadow: 5px 5px 4px grey; }
+    .presentation .presentationCard .picture, .presentation .presentationCard .text {
+      margin: auto;
+      width: 50%;
+      height: 50%;
+      padding: 15px; }
+    .presentation .presentationCard .text {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin: auto; }
+      .presentation .presentationCard .text .presentationTitle, .presentation .presentationCard .text .presentationText {
+        margin: auto;
+        text-align: center; }
+
+@media (max-width: 576px) {
+  .presentation {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px; }
+  .presentationCard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .picture {
+    width: 80%;
+    height: 80%; }
+  .text {
+    width: auto; } }
 
 .debug {
   border: red 1px solid; }
+
+.link {
+  text-align: center; }
+
+.footer-copyright {
+  background-color: black;
+  color: white; }
+
+.icons {
+  background-color: grey; }
+
+.mapCard {
+  background-color: white;
+  margin: 25px;
+  padding: 15px;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 4px grey;
+  box-shadow: 5px 5px 4px grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .mapCard .text {
+    margin: auto;
+    padding: 15px; }
+  .mapCard .map {
+    margin: auto; }
