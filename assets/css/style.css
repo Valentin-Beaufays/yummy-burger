@@ -204,9 +204,37 @@ body {
   box-shadow: 5px 5px 4px grey;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  max-height: 500px; }
   .mapCard .text {
     margin: auto;
     padding: 15px; }
-  .mapCard .map {
-    margin: auto; }
+  .mapCard .google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden; }
+  .mapCard .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 450px; }
+
+.photoCard {
+  margin: auto; }
+  .photoCard img {
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    margin-top: 50px;
+    -webkit-box-shadow: 5px 5px 4px grey;
+    box-shadow: 5px 5px 4px grey;
+    border-radius: 5px; }
+
+.pageSwitch {
+  margin: 50px; }
+
+.pagination {
+  margin: auto; }
